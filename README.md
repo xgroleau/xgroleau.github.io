@@ -1,4 +1,3 @@
 # xgroleau.github.io
 
-- stuff
-- stuff
+Just testing out [zola](https://www.getzola.org) to build a static website
