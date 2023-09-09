@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Code');
+
+$background: #3a3a3a;
+$primary: #EEF4ED;
+$link: #8DA9C4;
+
+html {
+    font-family: "Fira Code";
+    color: $primary;
+    background-color: $background;
+}
+
+header {
+    margin: 0 2rem;
+    max-width: 90%;
+}
+
+
+main {
+    max-width: calc(min(1200px, 100%));
+    margin: 0 auto;
+}
+
+
+a {
+    color: $link;
+    text-decoration: none;
+    &:hover {
+        color: $primary;
+    }
+}
+pre {
+  border-radius: 1rem;
+}

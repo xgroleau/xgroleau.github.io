@@ -4,3 +4,11 @@ date = 2019-11-27
 +++
 
 This is my first blog post.
+
+`hello`
+
+```rs
+pub fn main() -> () {
+    println!("Hey, whats going on!");
+}
+```

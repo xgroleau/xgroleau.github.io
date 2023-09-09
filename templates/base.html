@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% if lang %}{{ lang }}{% else %}en{% endif %}">
 
 <head>
   <meta charset="utf-8">
-  <title>MyBlog</title>
+
+  <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
+
+  <title>xgroleau</title>
 </head>
 
 <body>
-  <section class="section">
-    <div class="container">
+  <header>
+    <h1>
+      <a href="{{ config.base_url }}">{{ config.title }}</a>
+    </h1>
+  </header>
+  <main>
       {% block content %} {% endblock %}
-    </div>
   </section>
 </body>
 
