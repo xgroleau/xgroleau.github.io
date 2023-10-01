@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code');
 
 $background: #3a3a3a;
+$secondary: #282828;
 $primary: #EEF4ED;
 $link: #8DA9C4;
 
 html {
-    font-family: "Fira Code";
     color: $primary;
+    font-family: "Fira Code";
     background-color: $background;
 }
 
@@ -31,5 +32,35 @@ a {
     }
 }
 pre {
-  border-radius: 1rem;
+  overflow: auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rempx;
+    margin-bottom: 1rem;
+}
+
+
+/* Whatever */
+.blog-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blog-post {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: $secondary;
+}
+
+.post-date {
+    color: #{$link};
+}
+
+.post-excerpt {
+    margin-top: 1rem;
 }

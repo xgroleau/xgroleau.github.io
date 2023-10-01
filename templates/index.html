@@ -12,11 +12,15 @@
   <ul>
     <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
     {% set blog_section = get_section(path="blog/_index.md") %}
-    {% for page in blog_section.pages %}
-    <li>
-      <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-    </li>
-    {% endfor %}
+    {% for post in blog_section.pages %}
+    <article class="blog-post">
+        <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
+        <p class="post-date">{{ post.date | date(format="%B %d, %Y") }}</p>
+        <div class="post-excerpt">
+            {{ post.summary }}
+        </div>
+    </article>
+{% endfor %}
   </ul>
 </div>
 {% endblock content %}
