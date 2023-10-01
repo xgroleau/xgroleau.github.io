@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code');
 
 $background: #3a3a3a;
-$secondary: #282828;
+$secondary-background: #282828;
 $primary: #EEF4ED;
-$link: #8DA9C4;
+$secondary: #8DA9C4;
 
 html {
     color: $primary;
@@ -25,10 +25,12 @@ main {
 
 
 a {
-    color: $link;
+    color: inherit;
     text-decoration: none;
     &:hover {
+        cursor:pointer;  
         color: $primary;
+        text-decoration:none; 
     }
 }
 pre {
@@ -44,21 +46,16 @@ h2 {
 
 
 /* Whatever */
-.blog-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 .blog-post {
     padding: 1rem;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    background-color: $secondary;
+    background-color: $secondary-background;
 }
 
 .post-date {
-    color: #{$link};
+    color: #{$secondary};
 }
 
 .post-excerpt {

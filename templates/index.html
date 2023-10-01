@@ -8,19 +8,20 @@
 </p>
 
 <div>
-  <h3>Recent articles</h3>
-  <ul>
-    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
-    {% set blog_section = get_section(path="blog/_index.md") %}
-    {% for post in blog_section.pages %}
-    <article class="blog-post">
-        <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-        <p class="post-date">{{ post.date | date(format="%B %d, %Y") }}</p>
+  <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->
+  {% set blog_section = get_section(path="blog/_index.md") %}
+  {% for post in blog_section.pages %}
+  <article class="blog-post">
+    <a href="{{ post.permalink }}">
+      <h2>{{ post.title }}</h2>
+      <p class="post-date">{{ post.date | date(format="%B %d, %Y") }}</p>
+      {% if page.summary -%}
         <div class="post-excerpt">
-            {{ post.summary }}
+          what: {{ page.summary | linebreaksbr | replace(from="<br>", to=" ") | striptags | trim | safe }}
         </div>
-    </article>
-{% endfor %}
-  </ul>
+      {% endif %}
+    </a>
+  </article>
+  {% endfor %}
 </div>
 {% endblock content %}
