@@ -8,8 +8,8 @@ compile_sass = true
 build_search_index = true
 
 
-title = "XGroleau blog"
-description = "Some stuff"
+title = "XGroleau"
+description = "Blog about stuff"
 
 [markdown]
 # Whether to do syntax highlighting

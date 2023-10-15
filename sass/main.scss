@@ -9,43 +9,63 @@ $secondary: #8DA9C4;
 html {
     color: $primary;
     font-family: "Fira Code";
-    background-color: $background;
+    background-color: $secondary-background;
 }
 
 body{
     margin: 0;
+    display:flex;
+    flex-direction:column;
 }
 
 header {
      padding: 1rem 2rem;
      background: $secondary-background;
 }
-
+footer {
+     background: $secondary-background;
+}
 
 main {
-    max-width: calc(min(1200px, 100%));
-    margin: 0 auto;
+    flex: 1;
+    padding: 1rem 2rem;
+    background: $background;
+    article {
+        margin: 0 auto;
+        max-width: calc(min(1200px, 100%));
+    }
 }
 
 
 a {
     color: inherit;
-    text-decoration: none;
     &:hover {
         cursor:pointer;  
         color: $primary;
         text-decoration:none; 
     }
 }
+
 pre {
   overflow: auto;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
 
+
+h1 {
+    a {
+        text-decoration: none;
+    }
+}
+
 h2 {
     font-size: 1.5rempx;
     margin-bottom: 1rem;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 
@@ -56,6 +76,9 @@ h2 {
     border-radius: 0.5rem;
     margin-bottom: 1rem;
     background-color: $secondary-background;
+    a {
+        text-decoration: none;
+    }
 }
 
 .post-date {
