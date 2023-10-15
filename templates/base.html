@@ -6,7 +6,7 @@
 
   <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
 
-  <title>xgroleau</title>
+  <title>{{ config.title }}</title>
 </head>
 
 <body>
@@ -17,6 +17,7 @@
   </header>
   <main>
       {% block content %} {% endblock %}
+  </main>
   </section>
 </body>
 

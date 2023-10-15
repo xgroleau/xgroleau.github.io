@@ -12,9 +12,13 @@ html {
     background-color: $background;
 }
 
+body{
+    margin: 0;
+}
+
 header {
-    margin: 0 2rem;
-    max-width: 90%;
+     padding: 1rem 2rem;
+     background: $secondary-background;
 }
 
 
