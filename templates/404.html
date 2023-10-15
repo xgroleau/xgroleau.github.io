@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{% if lang %}{{ lang }}{% else %}en{% endif %}">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
+
+  <title>{{ config.title }}</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+        <a href="{{ config.base_url }}">{{ config.title }}</a>
+    </h1>
+  </header>
+  <main>
+    <article>
+        <h1 style="text-align:center;">404: Page not found</h1>
+    </article>
+  </main>
+  </section>
+</body>
+
+<footer>
+  Hellow
+</footer>
+
+</html>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Blog posts</h2>
+
+<p>
+  Some of my thoughts on different stuff.
+</p>
+
+<div>
+  {% for post in section.pages %}
+  <article class="blog-post">
+    <a href="{{ post.permalink }}">
+      <h2>{{ post.title }}</h2>
+      <p class="post-date">{{ post.date | date(format="%B %d, %Y") }}</p>
+      {% if page.summary -%}
+        <div class="post-excerpt">
+          what: {{ page.summary | linebreaksbr | replace(from="<br>", to=" ") | striptags | trim | safe }}
+        </div>
+      {% endif %}
+    </a>
+  </article>
+  {% endfor %}
+</div>
+{% endblock content %}
