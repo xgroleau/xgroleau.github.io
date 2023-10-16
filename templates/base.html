@@ -1,4 +1,7 @@
+{% import 'macros/icons.html' as icons -%}
+
 <!DOCTYPE html>
+
 <html lang="{% if lang %}{{ lang }}{% else %}en{% endif %}">
 
 <head>
@@ -24,7 +27,12 @@
 </body>
 
 <footer>
-  Hellow
+  {{ icons::link(icon="github", link="https://github.com/xgroleau", classes="social-icon") }}
+  {{ icons::link(icon="linkedin", link="https://www.linkedin.com/in/xavier-groleau", classes="social-icon") }}
+  {{ icons::link(icon="mastodon", link="https://mastodon.social/@xgroleau", classes="social-icon") }}
+  {{ icons::link(icon="twitter", link="https://x.com/XGroleau", classes="social-icon") }}
+  {{ icons::link(icon="mail", link="mailto:xavgroleau@gmail.com", classes="social-icon") }}
+  {{ icons::link(icon="key", link="https://github.com/xgroleau.keys", classes="social-icon") }}
 </footer>
 
 </html>
