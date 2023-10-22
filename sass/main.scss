@@ -2,6 +2,7 @@
 
 $background: #3a3a3a;
 $secondary-background: #282828;
+$third-background: #1f1f1f;
 $primary: #EEF4ED;
 $secondary: #8DA9C4;
 
@@ -30,10 +31,8 @@ header {
         a {
             float: left;
             padding: 1rem;
-            background: $background;
             &:hover {
-                color: $secondary;
-                background-color: $secondary-background;
+                background-color: $third-background;
             }
         }
     }
@@ -84,9 +83,6 @@ h2 {
     font-size: 1.5rempx;
     margin-bottom: 1rem;
 }
-
-
-/* Whatever */
 
 .blog-post {
     padding: 1rem;
