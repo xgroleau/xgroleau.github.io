@@ -19,3 +19,10 @@ highlight_theme = "gruvbox-dark"
 
 [extra]
 # Put all your custom variables here
+email="xavgroleau@gmail.com"
+ssh-keys="https://github.com/xgroleau.keys"
+
+github="https://github.com/xgroleau"
+twitter="https://x.com/XGroleau"
+mastodon="https://mastodon.social/@xgroleau"
+linkedin="https://www.linkedin.com/in/xavier-groleau"
