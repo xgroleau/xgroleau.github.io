@@ -4,8 +4,10 @@
 
 <head>
   <meta charset="utf-8">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{{ get_url(path="main.css", trailing_slash=false) }}">
 
   <title>{{ config.title }}</title>
@@ -14,8 +16,15 @@
 <body>
   <header>
     <h1>
-      <a href="{{ config.base_url }}">{{ config.title }}</a>
+      <a href="{{ config.base_url }}" class="nav-link">{{ config.title }}</a>
     </h1>
+    <nav>
+      <a href="{{ config.base_url }}/blog" class="nav-link">
+        <div>
+          Blog
+        </div>
+      </a>
+    </nav>
   </header>
   <main>
     <article>
@@ -28,7 +37,7 @@
 <footer>
   <a href="{{ config.extra.github }}" class="social-icon">
     <i class="fa-brands fa-square-github fa-2xl"></i>
-  </a> 
+  </a>
   <a href="{{ config.extra.twitter }}" class="social-icon">
     <i class="fa-brands fa-square-x-twitter fa-2xl"></i>
   </a>
@@ -40,7 +49,7 @@
   </a>
   <a href="mailto:{{ config.extra.email }}" class="social-icon">
     <i class="fa-solid fa-envelope fa-2xl"></i>
-  </a> 
+  </a>
   <a href="{{ config.extra.keys }}" class="social-icon">
     <i class="fa-solid fa-key fa-2xl"></i>
   </a>

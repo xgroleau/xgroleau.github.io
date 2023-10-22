@@ -1,9 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
 
-
-
-
-<p>Click <a href="{{ get_url(path='@/blog/_index.md') }}">here</a> to see my posts.</p>
-
+{{ section.content | safe }}
 {% endblock content %}

@@ -1,16 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2>Blog posts</h2>
-
-<p>
-  Some of my thoughts on different stuff.
-</p>
+{{ section.content | safe }}
 
 <div>
   {% for post in section.pages %}
   <article class="blog-post">
-    <a href="{{ post.permalink }}">
+    <a href="{{ post.permalink }}" class="nav-link">
       <h2>{{ post.title }}</h2>
       <p class="post-date">{{ post.date | date(format="%B %d, %Y") }}</p>
       {% if page.summary -%}
