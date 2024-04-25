@@ -1,7 +1,4 @@
-{% extends "base.html" %}
-{% block content %}
-
-{{ section.content | safe }}
+{% extends "base.html" %} {% block content %} {{ section.content | safe }}
 
 <div>
   {% for post in section.pages %}
@@ -9,10 +6,12 @@
     <a href="{{ post.permalink }}" class="nav-link">
       <h2>{{ post.title }}</h2>
       <p class="post-date">{{ post.date | date(format="%B %d, %Y") }}</p>
-      {% if page.summary -%}
-        <div class="post-excerpt">
-          what: {{ page.summary | linebreaksbr | replace(from="<br>", to=" ") | striptags | trim | safe }}
-        </div>
+
+      {% if post.summary %}
+      <div class="post-excerpt">
+        what: {{ post.summary | linebreaksbr | replace(from="<br />", to=" ") |
+        striptags | trim | safe }}
+      </div>
       {% endif %}
     </a>
   </article>

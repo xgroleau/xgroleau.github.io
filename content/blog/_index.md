@@ -6,4 +6,4 @@ sort_by = "date"
 +++
 ## Blog
 
-Some of my thoughts when things either work or as they often do, doesn't.
+A [bare bone blog](http://motherfuckingwebsite.com/) where I dump some of my brain activity.

@@ -4,6 +4,7 @@ date = 2019-11-25
 +++
 
 This is my first blog post.
+<!-- more -->
 
 `hello`
 

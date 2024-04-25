@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Code');
+@import url("https://fonts.googleapis.com/css?family=Fira+Code");
 
 $background: #3a3a3a;
 $secondary-background: #282828;
 $third-background: #1f1f1f;
-$primary: #EEF4ED;
-$secondary: #8DA9C4;
+$primary: #eef4ed;
+$secondary: #8da9c4;
 
 html {
     color: $primary;
@@ -14,13 +14,14 @@ html {
     background-color: $secondary-background;
 }
 
-body{
+body {
     margin: 0;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
+    margin: 1rem;
     display: flex;
     padding-left: 2rem;
     background: $secondary-background;
@@ -40,11 +41,10 @@ header {
     }
 }
 footer {
-     height: 2rem;
-     text-align: right;
-     margin: 1rem 2rem;
-     background: $secondary-background;
-
+    height: 2rem;
+    text-align: right;
+    margin: 1rem 2rem;
+    background: $secondary-background;
 
     .social-icon {
         text-decoration: none;
@@ -64,22 +64,20 @@ main {
     }
 }
 
-
 a {
     color: inherit;
     &:hover {
-        cursor:pointer;  
+        cursor: pointer;
         color: $primary;
-        text-decoration:none; 
+        text-decoration: none;
     }
 }
 
 pre {
-  overflow: auto;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+    overflow: auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
-
 
 h2 {
     font-size: 1.5rempx;
