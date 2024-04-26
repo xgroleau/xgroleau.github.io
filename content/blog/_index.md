@@ -6,4 +6,6 @@ sort_by = "date"
 +++
 ## Blog
 
-A [bare bone blog](http://motherfuckingwebsite.com/) where I dump some of my brain activity.
+A bare bone blog where I dump some of my brain activity.
+
+Opinions are my own and do not express the views of my employer.

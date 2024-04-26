@@ -9,7 +9,7 @@ build_search_index = true
 
 
 title = "XGroleau"
-description = "Blog about stuff"
+description = "Blog"
 
 [markdown]
 # Whether to do syntax highlighting

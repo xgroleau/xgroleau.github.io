@@ -7,12 +7,10 @@
       <h2>{{ post.title }}</h2>
       <p class="post-date">{{ post.date | date(format="%B %d, %Y") }}</p>
 
-      {% if post.summary %}
       <div class="post-excerpt">
-        what: {{ post.summary | linebreaksbr | replace(from="<br />", to=" ") |
+        {{ post.summary | linebreaksbr | replace(from="<br />", to=" ") |
         striptags | trim | safe }}
       </div>
-      {% endif %}
     </a>
   </article>
   {% endfor %}
