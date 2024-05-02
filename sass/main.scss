@@ -78,6 +78,11 @@ pre {
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
+// Fix since zola doesn't markup inline code
+code {
+    color: #fdf4c1aa;
+    background-color: #282828;
+}
 
 h2 {
     font-size: 1.5rempx;
